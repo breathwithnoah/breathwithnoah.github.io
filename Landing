@@ -1,0 +1,47 @@
+<style>
+  .banner { background-color: #fff; display: flex; padding-bottom: 13px; flex-direction: column; }
+  .banner-content { display: flex; flex-direction: column; overflow: hidden; position: relative; display: flex; min-height: 622px; width: 100%; padding-top: 80px; }
+  @media (max-width: 991px) { .banner-content { max-width: 100%; } }
+  .banner-image { position: absolute; inset: 0; height: 100%; width: 100%; object-fit: cover; object-position: center; }
+  .content-wrapper { position: relative; align-self: center; margin-top: 23px; width: 100%; max-width: 1057px; }
+  @media (max-width: 991px) { .content-wrapper { max-width: 100%; } }
+  .columns-container { gap: 20px; display: flex; }
+  @media (max-width: 991px) { .columns-container { flex-direction: column; align-items: stretch; gap: 0px; } }
+  .main-column, .aside-column { display: flex; flex-direction: column; line-height: normal; }
+  .main-column { width: 58%; margin-left: 0px; }
+  .aside-column { width: 42%; margin-left: 20px; }
+  @media (max-width: 991px) { .main-column, .aside-column { width: 100%; } }
+  .hero-text { position: relative; display: flex; flex-grow: 1; flex-direction: column; font-size: 20px; font-weight: 700; text-transform: capitalize; letter-spacing: -0.22px; line-height: 150%; padding: 0 20px; }
+  @media (max-width: 991px) { .hero-text { max-width: 100%; margin-top: 22px; } }
+  .highlight-text { color: #b7932b; font-family: Montserrat, sans-serif; text-transform: uppercase; }
+  .main-text { color: #fff; letter-spacing: -0.39px; margin-top: 36px; font: 35px/42px Montserrat, sans-serif; }
+  .additional-info { color: rgba(255, 255, 255, 0.8); font-family: Montserrat, sans-serif; font-weight: 400; line-height: 30px; margin-top: 28px; }
+  .join-button { font-family: Montserrat, sans-serif; border-radius: 13px; background-color: #ffd500; align-self: start; margin-top: 28px; color: #000; padding: 24px 36px; white-space: nowrap; }
+  .video-title { position: relative; display: flex; margin-top: 8px; flex-direction: column; font-size: 25px; color: #000; font-weight: 700; text-align: center; text-transform: uppercase; letter-spacing: -0.28px; line-height: 150%; }
+  .video-placeholder { background-color: #fff; height: 228px; }
+  .section-highlight { position: relative; background-color: rgba(183, 147, 43, 1); z-index: 10; min-height: 100px; width: 100%; margin: 69px 0 -13px; }
+  @media (max-width: 991px) { .section-highlight { max-width: 100%; margin: 40px 0 10px; } }
+</style>
+
+<div class="banner">
+  <div class="banner-content">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/50e994b6bbab8e3087816ab58b109959741cac1f947ba7decdaddefdb8f24166?apiKey=be12683998e4469eb44af086bf964ead&" alt="" class="banner-image" />
+    <div class="content-wrapper">
+      <div class="columns-container">
+        <div class="main-column">
+          <div class="hero-text">
+            <div class="highlight-text">Busy professional Seeking balance?</div>
+            <div class="main-text"> Boost your energy naturally And develop razor-sharp focus with just 10 minutes a day <br /> </div>
+            <div class="additional-info"> Join a <strong>6-Week Breathwork Journey</strong> to <br /> put an end to distraction so you can stay tapped into your purpose. </div>
+            <button class="join">JOIN NOW</button>
+          </div>
+        </div>
+        <div class="aside-column">
+          <div class="video-title">Watch This First! (Sound On)</div>
+          <div class="video-placeholder"></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-highlight"></div>
+  </div>
+</div>
